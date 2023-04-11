@@ -34,22 +34,11 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
-import com.github.devnied.emvnfccard.enums.CommandEnum;
-import com.github.devnied.emvnfccard.exception.CommunicationException;
-import com.github.devnied.emvnfccard.iso7816emv.EmvTags;
-import com.github.devnied.emvnfccard.iso7816emv.impl.DefaultTerminalImpl;
-import com.github.devnied.emvnfccard.utils.CommandApdu;
 import com.github.devnied.emvnfccard.utils.TlvUtil;
-import com.payneteasy.tlv.BerTag;
-import com.payneteasy.tlv.BerTlv;
-import com.payneteasy.tlv.BerTlvParser;
-import com.payneteasy.tlv.BerTlvs;
 
-import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.io.OutputStreamWriter;
 import java.math.BigInteger;
-import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Calendar;
@@ -135,11 +124,9 @@ public class MainActivity extends AppCompatActivity implements NfcAdapter.Reader
                     nfc.setTimeout(10000);
                     writeToUiAppend("timeout new: " + nfc.getTimeout() + " ms");
 
-
                     /**
                      * step 1 code start
                      */
-
 
 
                     /**
@@ -166,8 +153,6 @@ public class MainActivity extends AppCompatActivity implements NfcAdapter.Reader
         writeToUiFinal(etLog);
         setLoadingLayoutVisibility(false);
     }
-
-
 
     /**
      * section for emv reading
