@@ -3,7 +3,7 @@
 This app shows how to talk with a Credit Card and get information's like the Credit Card number, 
 the card's expiration date and some other data.
 
-A general description can be found in an article series on medium.com:
+A general description can be found in an article series on medium.com: https://medium.com/@androidcrypto/talk-to-your-credit-card-android-nfc-java-d782ff19fc4a
 
 - general overview about the app
 - ask the card which applications are available on the card ("select PPSE")
